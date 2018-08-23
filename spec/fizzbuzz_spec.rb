@@ -32,6 +32,9 @@ describe 'fizzbuzz' do
     it 'returns "buzz" when divisible by 5' do
       expect(fizzbuzz(5)).to eq 'buzz'
     end
+    it 'return integer when neither divisible 3 nor 5' do
+      expect(fizzbuzz(1)).to eq 1
+    end
   end
 end
 #it 'returns "fizzbuzz" when passed multiple of 15' do
