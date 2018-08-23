@@ -9,3 +9,11 @@ end
 def is_divisible_by_three_and_five?(number)
   number % 15 == 0
 end
+
+
+def fizzbuzz(number)
+  return "fizzbuzz" if is_divisible_by_three_and_five?(number)
+  return "fizz" if is_divisible_by_three?(number)
+  return "buzz" if is_divisible_by_five?(number)
+end
+

@@ -21,20 +21,21 @@ describe 'fizzbuzz' do
     it 'is not divisible by 3 and 5' do
       expect(is_divisible_by_three_and_five?(1)).to be false
     end
+  end
+  context 'returns fizz/buzz/fizzbuzz...' do
+    it 'returns "fizzbuzz" when divisible by 15' do
+      expect(fizzbuzz(15)).to eq 'fizzbuzz'
+    end
+    it 'returns "fizz" when divisible by 3' do
+      expect(fizzbuzz(3)).to eq 'fizz'
+    end
+    it 'returns "buzz" when divisible by 5' do
+      expect(fizzbuzz(5)).to eq 'buzz'
+    end
 
   end
 end
 
-
-#it 'returns "fizzbuzz" when passed multiple of 15' do
-  #expect(fizzbuzz_says(15)).to eq 'fizzbuzz'
-#end
-#it 'returns "fizz" when passed 3' do
-  #expect(fizzbuzz_says(3)).to eq 'fizz'
-#end
-#it 'returns "buzz" when passed 5' do
-  #expect(fizzbuzz_says(5)).to eq 'buzz'
-#end
 #
 #describe 'fizzbuzz' do
   #it 'is divisible by 3' do
