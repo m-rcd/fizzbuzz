@@ -15,6 +15,13 @@ describe 'fizzbuzz' do
     it 'is not divisible by 5' do
       expect(is_divisible_by_five?(1)).to be false
     end
+    it 'is divisible by 3 and 5' do
+      expect(is_divisible_by_three_and_five?(15)).to be true
+    end
+    it 'is not divisible by 3 and 5' do
+      expect(is_divisible_by_three_and_five?(1)).to be false
+    end
+
   end
 end
 
