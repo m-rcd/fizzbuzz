@@ -1,10 +1,10 @@
 require  'fizzbuzz'
 
 
-describe 'fizzbuzz_says' do
+describe 'fizzbuzz' do
   context 'knows when a number is' do
     it 'is divisible by 3' do
-      expect(is_divisible_by?(3,3)).to eq true
+      expect(is_divisible_by_three?(3)).to be true
     end
   end
 end
